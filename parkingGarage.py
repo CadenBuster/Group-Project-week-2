@@ -6,7 +6,7 @@ class ParkingGarage():
         self.tickets = [100]
         self.parkingspaces = [100]
         self.currentticket= {'paid':False}
-
+# Sean's Section
     def take_ticket(self):
         for x in range(len(self.tickets)):
             self.tickets[x] -= 1
@@ -17,7 +17,7 @@ class ParkingGarage():
             for s in self.parkingspaces:
                 print(f'There are {s} parking spots available')
         
-    
+    # Peace's Section
     def pay_parking(self):
         while True:
             fare =  int(input('Please Enter Amount   '))
@@ -32,7 +32,7 @@ class ParkingGarage():
                 print('Invalid input')
                 continue
             
-
+# Caden's Section
     def leave_gargage(self):
         if self.currentticket['paid'] == True:
             print('Thank you have a nice day')
